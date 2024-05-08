@@ -1,7 +1,7 @@
 body {
     display: grid;
-    grid-template-columns: auto auto; /* Define your grid columns */
-    grid-column-gap: 1px; 
+    grid-template-rows: 80vh 20vh;
+    row-gap: 20px;
 
     background-color: rgb(0, 0, 0);
     margin:0px;
@@ -11,11 +11,20 @@ body {
     font-style: normal;
     font-variation-settings:"width" 100;
     font-size: 16px;
+    height: 100vh;
   }
   body::-webkit-scrollbar {
     display: none;
 }
-  
+  .section_1{
+    display: grid;
+    grid-template-columns: auto auto; /* Define your grid columns */
+    grid-column-gap: 1px;
+   
+  }
+  .section_2{
+
+  }
   /*Side bar styling*/
   .side_bar{
     display: flex;
@@ -23,7 +32,7 @@ body {
     position: relative;
    margin: 10px 0 0 10px;
     width:300px;
-    height: 100vh;
+    height: 80vh;
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -102,7 +111,7 @@ svg{
 
 .information{
     width:300px;
-    height: 366px;
+    height: 300px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -207,7 +216,7 @@ svg{
     border-radius: 10px;
     grid-column-start: 3;
     grid-column-end: 12;
-    height: 90vh;
+    height: 80vh;
     margin: 10px 10px 50px 0;
     overflow: auto;
   }
@@ -350,4 +359,160 @@ svg{
     /* Change the height to 5 pixels */
   }
   
+  /*music player style*/
+  .music-player{
+    background-color: #111;
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    position: relative;
+    height: 7rem;
+   margin: 0 10px;
+    color: #ddd;
+    border-radius: 10px;
   
+}
+.song-bar{
+    position:absolute;
+    left: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5em;
+    width: 25%;
+}
+.song-info{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.song-description p{
+    margin: 0.2em;
+}
+.image-container{
+    width: 4.5em;
+    height: 4.5em;
+    flex-shrink: 0;
+
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title,
+.artist{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.artist{
+    color: #999;
+}
+.icons{
+    display: flex;
+    gap: 1em;
+
+}
+.progress-controller{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    color: #999;
+
+}
+.control-buttons{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+}
+.play-pause{
+    display: inline-block;
+    padding: 1em;
+    background-color: #ddd;
+    color: #111;
+    border-radius: 50%;
+}
+.play-pause:hover{
+    transform: scale(1.1);
+    color: #111;
+}
+i{
+    color: #ddd;
+}
+i:hover{
+    color: #999;
+
+}
+.progress-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.progress-bar{
+    height: 4px;
+    border-radius:10px ;
+    width: 30%;
+    background-color: #ccc4;
+
+}
+.progress{
+    position: relative;
+    height: 100%;
+    width:30%;
+    border-radius: 10px;
+    background-color: #999;
+}
+.progress-bar:hover .progress{
+    background-color: #2d5;
+}
+.progress-bar:hover .progress::after{
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    right: 0;
+    border-radius: 50%;
+    background-color: #ddd;
+    transform: translate(50%,calc(2px - 50%));
+}
+.other-features{
+    position: absolute;
+    right: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.volume-bar{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+.volume-bar .progress-bar{
+    width: 6em;
+
+}
+
+audio {
+ /* Set the background color of the audio player to black */
+  color: white; /* Set the text color to white */
+  width: 500px; /* Set the width of the audio player */
+  margin: 20px auto; /* Center the audio player horizontally */
+  display: block;
+
+
+}
+audio::-webkit-media-controls-play-button {
+  color: white; /* Set the color of the play button (for WebKit browsers) */
+}
+
+
+/*End here*/  
