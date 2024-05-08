@@ -218,7 +218,6 @@ svg{
   
   .header{
     border-radius: 10px;
-    background-color: rgb(32, 32, 32);
     display: flex;
     padding: 10px 10px;
     justify-content: space-between;
@@ -245,7 +244,6 @@ svg{
   cursor: pointer;
   }
   .header_div2{
-  
   }
   a{
     text-decoration: none;
