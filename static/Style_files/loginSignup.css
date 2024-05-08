@@ -1,0 +1,254 @@
+/*sign up page styling*/
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+.icon_svg{
+    font-size: 5rem;
+    fill: white;
+}
+.icon_div{
+    padding: 20px;
+
+}
+.main{
+    display: flex;
+    place-content: center;
+}
+.details_form{
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+     font-style: normal;
+    width: 320px;
+
+}
+input{
+    
+    padding: 12px 16px;
+    height: 45px;
+    background-color: #121212;
+    color: #999999;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+.heading-signup{
+    font-size: 2.3rem;
+    word-spacing: -4px;
+}
+label{
+    font-size: .79rem;
+    font-weight: bold;
+}
+input::placeholder {
+font-size: 15px;
+color: #999999;
+
+}
+button{
+width: 320px;
+height: 50px;
+background-color:#0abe49;  /* Dark green color */
+color: white;
+font-size: 15px;
+font-weight: bold;
+border-radius: 30px;
+border-style: none;
+
+}
+.div-hr{
+padding: 35px 0px;
+
+}
+
+.div-hr-or{
+width: 40px;
+height: 40px;
+font-size:.79rem ;
+display: grid;
+place-content: center;
+border-radius: 50%;
+position: relative;
+top: -57px;
+left: 141px;
+background-color: black;
+}
+.P-details1{
+font-size: 14px;
+color: #999999; 
+}
+.P-details1 a{
+color: white;
+font-weight: 200;
+}
+.P-details2 ,.P-details2 a{
+font-size: 11px;
+color: #999999; 
+}
+
+.signup-ways{
+width: 320px;
+height: 200px;
+
+}
+.signup-ways ul{
+list-style: none;
+}
+.signup-ways ul li{
+height: 50px;
+border: 1px solid #999999 ;
+display: block;
+place-content: center;
+border-radius: 30px;
+margin-bottom: 10px;
+}
+.fa-google,.fa-facebook,.fa-apple{
+padding: 20px;
+}
+.signup-list{
+padding-left: 13px;
+color: white;
+font-weight: bold;
+text-decoration: none;
+
+}
+.error{
+    color: red;
+    font: 1rem;
+}
+/*End here*/
+.heading-spotify{
+    background-color:rgb(14, 13, 13);
+    padding: 20px;
+}
+.icon_svg{
+    font-size: 5rem;
+    fill: white;
+    
+}
+.main-middle{
+display: flex;
+place-content: center;
+}
+.middle-div{
+    width: 60%;
+    text-align: center;
+    margin: 30px;
+    background-color: rgb(14, 13, 13);
+    border-radius: 7px;  
+    color: white;
+    padding: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: grid;
+    place-content: center;
+    word-spacing: -4px;
+}
+   
+.middle-div ul{
+list-style: none;
+margin: 30px 70px;
+}
+.middle-div ul li{
+height: 50px;
+width: 350px;
+border: 1px solid #999999 ;
+display:flex;
+justify-content: space-evenly    ;
+align-items: center;
+border-radius: 30px;
+margin-bottom: 10px;
+}
+
+
+.signup-list{
+padding-left: 13px;
+color: white;
+font-weight: bold;
+text-decoration: none;
+
+}
+form{
+    display: flex;
+    place-content: center;
+}
+.details_form{
+ color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 300;
+font-style: normal;
+width: 350px;
+
+
+
+}
+input{
+
+padding: 12px 16px;
+height: 45px;
+background-color: #121212;
+color: #999999;
+border: 1px solid #999999;
+border-radius: 5px;
+}
+
+label{
+font-size: .79rem;
+font-weight: bold;
+float: left;
+}
+input::placeholder {
+font-size: 15px;
+color: #999999;
+
+}
+button{
+
+width: 343px;
+height: 50px;
+background-color:#0abe49;  /* Dark green color */
+color: white;
+font-size: 15px;
+font-weight: bold;
+border-radius: 30px;
+border-style: none;
+
+}   
+.last-link{
+color: #999999;
+}
+.forget-pass-link a ,.last-link, .last-link a{
+
+color: white;
+font-weight:100;
+font-size: 15px;
+word-spacing: -1px;
+}
+.last-div,.last-div a{
+background-color: rgb(14, 13, 13);
+padding: 35px 0px;
+color: #999999;
+font-size: 12px;
+}
+.color{
+color: #999999;
+}
+.p-0{
+padding: 0px;
+}
+
+hr {  
+height: 1px;  
+background-color: #999999;  
+border: none;  
+} 
+
+
